@@ -45,10 +45,3 @@ Rute pentru API-ul de products:
     PUT -> /api/produsts/{id} -> update
     DELETE -> /api/produsts/{id} -> delete
     CREATE -> /api/produsts/ -> create
-
-## Closing remarks
-
-Va stau la dispozitie daca am ratat vreun subiect, deoarece este o descriere pe scurt a assignment-ului. Tin sa mentionez ca puteam sa mai adaug elemente proiectului, cum ar fi dockerizarea tuturor serviciilor, generare de client pentru API sau customizarea totala a frontend-ului, dar am considerat ca nu aduc o valoare semnificativa in raport cu timpul necesar.
-
-## Numai bine!
-## Vlad Tureanu.
