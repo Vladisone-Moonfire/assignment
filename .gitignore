@@ -1,0 +1,27 @@
+# Laravel
+*/vendor/
+*/node_modules/
+*.env
+*.cache/
+*Homestead.yaml
+*Homestead.json
+*npm-debug.log
+*yarn-error.log
+*.env.local.php
+*.env.local
+*.env.development
+*.env.test
+*.env.production
+*.phpunit.result.cache
+
+# Next.js
+*/.next/
+*/out/
+*/.env
+
+*.idea
+
+# General
+*.DS_Store
+*.env.local
+*.env.development
