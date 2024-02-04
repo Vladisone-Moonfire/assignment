@@ -39,6 +39,12 @@ API-ul de produse are toate metodele cerute si anume: Index, View, Create, Updat
 Totodata, pentru ruta de index am adaugat paginare, deoarece lucram cu multe date, sortare si filtrare. In postman puteti folosii parametrii de sortare: sort = {numele coloanei} sau sort - {-numele coloanei} pentru a sorta crescator sau descrescator, filter[{numele coloanei}] = "test" pentru a filtra orice coloana dupa un anumit substring.
 Coloanele care permit filtrare au fost indexate in baza de date pentru a facilita raspunsurile rapide.
 
+Rute pentru API-ul de products:
+    GET -> /api/produsts -> index
+    GET -> /api/produsts/{id} -> view
+    PUT -> /api/produsts/{id} -> update
+    DELETE -> /api/produsts/{id} -> delete
+    CREATE -> /api/produsts/ -> create
 
 ## Closing remarks
 
