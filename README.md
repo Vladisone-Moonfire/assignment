@@ -9,17 +9,25 @@ In folderul root al proiectului se afla si un docker-compose menit sa ruleze ser
 
 ## Comenzi pentru initializarea proiectului:
 
-    -docker compose up -d (in folderul root pentru initializarea containerului de db)
+    -docker compose up -d --build (in folderul root pentru initializarea containerului de db)
 
     -npm i (in folderul pentru frontend pentru initializarea pachetelor)
     -npm run dev (in folderul pentru frontend pentru rularea serviciului)
     -crearea env-ului din env.example
 
-    -composer install (in folderul pentru backend pentru initializarea pachetelor)
-    -php artisan migrate (in folderul pentru backend pentru rularea migrarilor)
-    -php artisan serve (in folderul pentru backend pentru rularea serviciului)
-    -php artisan db:seed (in folderul pentru backend pentru initilizarea db-ului de produse cu 100K produse, atentie va dura ceva)
-    -crearea env-ului din env.example
+    Pentru a ajunge in contex-ul containerului de docker rulam:
+        -docker compose exec app bash
+    In contextul containerului de docker de backend trebuie rulat: 
+        -composer install (in folderul pentru backend pentru initializarea pachetelor)
+        -php artisan migrate (in folderul pentru backend pentru rularea migrarilor)
+        -php artisan serve (in folderul pentru backend pentru rularea serviciului)
+        -php artisan db:seed (in folderul pentru backend pentru initilizarea db-ului de produse cu 100K produse, atentie va dura ceva)
+    Trebuie dat overwrite la permisiunile din storage facute de docker:
+        -chmod -R gu+w storage
+        -chmod -R guo+w storage
+        -crearea env-ului din env.example pentru backend
+
+-crearea env-ului din env.example
 
 ## User management
 
