@@ -21,6 +21,7 @@ In folderul root al proiectului se afla si un docker-compose menit sa ruleze ser
         -composer install (in folderul pentru backend pentru initializarea pachetelor)
         -php artisan migrate (in folderul pentru backend pentru rularea migrarilor)
         -php artisan serve (in folderul pentru backend pentru rularea serviciului)
+        -php artisan key:generate
         -php artisan db:seed (in folderul pentru backend pentru initilizarea db-ului de produse cu 100K produse, atentie va dura ceva)
     Trebuie dat overwrite la permisiunile din storage facute de docker:
         -chmod -R gu+w storage
